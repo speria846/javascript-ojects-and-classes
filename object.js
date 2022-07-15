@@ -1,4 +1,4 @@
-var shop=[
+var KIOSK=[
     {
         product:"pineapple",
         price:80,
@@ -13,7 +13,7 @@ var shop=[
     }
 ]
 function getTotalCost(product,quantity){
-    let b=shop.find(item=>item.product===product)
+    let b=KIOSK.find(item=>item.product===product)
     console.log(`${quantity} ${product} for Kes ${b.price*quantity}`)
 }
 getTotalCost("pineapple",4)
